@@ -3,8 +3,8 @@ import { AiOutlineSearch } from "react-icons/ai";
 
 export default function Search() {
   return (
-    <div className="flex justify-between">
-      <form className="flex bg-primary shadow min-w-1/3 px-4 space-x-3">
+    <div className="flex justify-between max-sm:flex-col gap-6">
+      <form className="flex bg-primary shadow min-w-1/3 p-4 space-x-3">
         <button type="submit" className="cursor-pointer ">
           <AiOutlineSearch className="text-2xl text-Text" />
         </button>
