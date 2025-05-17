@@ -28,14 +28,14 @@ export default function DetailsPage() {
       <div>
         <button
           onClick={handleClick}
-          className="capitalize bg-primary shadow px-4 py-2 flex items-center rounded font-semibold cursor-pointer"
+          className="capitalize dark:bg-dark-primary dark:text-white bg-primary shadow px-4 py-2 flex items-center rounded font-semibold cursor-pointer"
         >
           <GoArrowLeft className="mr-3" />
           Back
         </button>
       </div>
       {loading ? (
-        <AiOutlineLoading3Quarters className="animate-spin  text-[100px] absolute transform -translate-1/2 left-1/2 top-1/2" />
+        <AiOutlineLoading3Quarters className="animate-spin  dark:text-white text-[100px] absolute transform -translate-1/2 left-1/2 top-1/2" />
       ) : (
         <Details country={city} />
       )}

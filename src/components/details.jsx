@@ -31,7 +31,7 @@ export default function Details({ country }) {
     }
   }, [country]);
   return (
-    <div className="grid grid-cols-2 max-md:grid-cols-1 w-full py-10 gap-10">
+    <div className="grid grid-cols-2 max-md:grid-cols-1 w-full py-10 gap-10  dark:text-white">
       <img
         src={`${country.flags.png}`}
         className="w-full h-full border  border-Text"

@@ -4,6 +4,7 @@
   --color-primary: #fff;
   --color-secondary: #fafafa;
   --color-dark-primary: #2b3945;
-  --color-dark-secondary: #2b3945;
+  --color-dark-secondary: #202c37;
   --color-Text: #858585;
 }
+@custom-variant dark (&:where(.dark, .dark *));
