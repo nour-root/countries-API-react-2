@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@theme {
+  --default-font-family: "Nunito Sans", serif;
+  --color-primary: #fff;
+  --color-secondary: #fafafa;
+  --color-dark-primary: #2b3945;
+  --color-dark-secondary: #2b3945;
+  --color-Text: #2b3945;
+}
