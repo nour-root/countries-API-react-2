@@ -1,10 +1,15 @@
+import { IoMoonOutline } from "react-icons/io5";
+import { GoSun } from "react-icons/go";
 export default function Header() {
   return (
-    <header>
+    <header className="shadow max-sm:px-6 px-8 py-6 flex items-center justify-between">
       <div>
-        <h1 className="text-2xl"></h1>
+        <h1 className="text-2xl font-bold">where in the world?</h1>
       </div>
-      <div></div>
+      <button className="flex items-baseline space-x-2 cursor-pointer">
+        <IoMoonOutline className="text-xl" />
+        <p className="text-xl font-semibold">dark Mode</p>
+      </button>
     </header>
   );
 }
