@@ -1,6 +1,17 @@
+import useStatePage from "../Context/stateContext";
+import useCountryName from "../Context/countryNameContext";
 export default function Card({ country }) {
+  const { setState } = useStatePage();
+  const { setCountryName } = useCountryName();
+  const handleClick = () => {
+    setState(true);
+    setCountryName(country.name.common);
+  };
   return (
-    <div className="bg-primary h-[400px] rounded flex overflow-hidden flex-col gap-4 shadow transform transition-all duration-200 cursor-pointer hover:shadow-lg hover:-translate-y-1">
+    <div
+      onClick={handleClick}
+      className="bg-primary h-[400px] rounded flex overflow-hidden flex-col gap-4 shadow transform transition-all duration-200 cursor-pointer hover:shadow-lg hover:-translate-y-1"
+    >
       <img
         src={`${country.flags.png}`}
         className="h-1/2"

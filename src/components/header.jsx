@@ -6,7 +6,7 @@ export default function Header() {
       <div>
         <h1 className="text-2xl font-bold">where in the world?</h1>
       </div>
-      <button className="flex items-baseline space-x-2 cursor-pointer">
+      <button className="flex items-center space-x-2 cursor-pointer">
         <IoMoonOutline className="text-xl" />
         <p className="text-xl font-semibold">dark Mode</p>
       </button>

@@ -1,11 +1,16 @@
 import "./App.css";
 import MainPage from "./pages/mainPage";
+import { StateContext } from "./Context/stateContext";
+import { useState } from "react";
 document.body.classList.add("bg-secondary");
 
 function App() {
+  const [state, setState] = useState();
   return (
     <>
-      <MainPage />
+      <StateContext.Provider value={{ state, setState }}>
+        <MainPage />
+      </StateContext.Provider>
     </>
   );
 }
